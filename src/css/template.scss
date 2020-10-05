@@ -1,0 +1,300 @@
+// default style
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  // font-family: '微軟正黑體', 'Microsoft JhengHei', 'Segoe UI Semibold', 'Segoe UI', 'Lucida Grande', 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+  background: var(--home-body);
+  overscroll-behavior-y: none;
+}
+
+.container {
+  padding: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  @media only screen and (max-width: 1024px) {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:focus {
+  outline: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.default * {
+  color: $font-default;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+// 賦予class切版屬性
+
+.flex {
+  display: flex;
+  flex-wrap: unset !important;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.row-reserve {
+  flex-direction: row-reverse;
+}
+
+.wrap-reserve {
+  flex-wrap: wrap-reverse;
+}
+
+.wide {
+  width: 100%;
+}
+
+.scroll-h {
+  overflow-x: hidden;
+}
+
+// justify
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+// align
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.align-between {
+  align-content: space-between;
+}
+
+// fixed
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.fixed-full {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// absolute
+
+.absolute-left {
+  position: absolute;
+  left: 0;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0;
+}
+
+.absolute-left-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.absolute-top {
+  position: absolute;
+  top: 0;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.absolute-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// sticky
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+// else
+
+.margin-left {
+  margin-left: auto;
+}
+
+.margin-right {
+  margin-right: auto;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+// .scroll-x {
+//   overflow-x: scroll;
+// }
+
+.scroll-y {
+  overflow-y: scroll;
+}
+
+.image-cover {
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.height-100 {
+  height: 100vh;
+}
+
+.separator {
+  margin: 0 -10px;
+  height: 15px;
+  background: #f5f5f5;
+}
+
+// 文字屬性
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+// img filter
+.brightness {
+  filter: brightness(5);
+}

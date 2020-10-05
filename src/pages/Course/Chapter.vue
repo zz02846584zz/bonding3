@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="chapter">
     <div class="section">
       <div class="title">課程大綱</div>
@@ -259,3 +260,9 @@
   }
 }
 </style>
+=======
+  <div>
+
+  </div>
+</template>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="main">
     <div class="table-group">
       <div class="item">
@@ -122,3 +123,9 @@
   }
 }
 </style>
+=======
+  <div>
+    test2
+  </div>
+</template>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

@@ -1,6 +1,7 @@
 <template>
   <div class="news">
     <div class="video-news section">
+<<<<<<< HEAD
       <div class="title">影音</div>
       <Slider class="video-slider">
         <swiper-slide class="video-slide" v-for="n in 5" :key="n">
@@ -26,29 +27,61 @@
         <NewSwipeItem class="item" v-for="n in 10" :key="n" />
       </div>
     </div>
+=======
+      <div class="title">影音新聞</div>
+      <!-- <swiper ref="mySwiper" :options="swiperOptions">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper> -->
+      <Slider>
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+      </Slider>
+    </div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import Slider from 'components/New/SwipeNews'
 import NewSwipeItem from 'components/New/GridItem'
+=======
+import Slider from '../components/New/SwipeNews'
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 import { SwiperSlide } from 'vue-awesome-swiper'
 
 export default {
   components: {
+<<<<<<< HEAD
     Slider, NewSwipeItem, SwiperSlide
+=======
+    Slider, SwiperSlide
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .news {
+<<<<<<< HEAD
   padding: 10px 12px;
+=======
+  padding: 10px 0;
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 }
 .section {
   &:first-child .title {
     margin-top: 0;
   }
+<<<<<<< HEAD
 }
 .video-news {
   padding-bottom: 12px;
@@ -96,6 +129,10 @@ export default {
         width: 20px;
       }
     }
+=======
+  > .title {
+    padding: 0 12px;
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   }
 }
 </style>

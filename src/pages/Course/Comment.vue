@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="comment">
     <div class="top">
       <div class="score">
@@ -141,3 +142,9 @@ export default {
   padding: 0 15px;
 }
 </style>
+=======
+  <div>
+
+  </div>
+</template>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

@@ -19,30 +19,50 @@ module.exports = function (/* ctx */) {
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
     boot: [
+<<<<<<< HEAD
       'i18n',
+=======
+
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       'axios'
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: [
       'app.scss',
+<<<<<<< HEAD
       'template.scss',
       'transition.scss'
+=======
+      'template.scss'
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
+<<<<<<< HEAD
       'ionicons-v4',
       // 'mdi-v5',
       // 'fontawesome-v5',
       'eva-icons',
+=======
+      // 'ionicons-v4',
+      // 'mdi-v5',
+      // 'fontawesome-v5',
+      // 'eva-icons',
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       // 'themify',
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
+<<<<<<< HEAD
       // 'roboto-font', // optional, you are not bound to it
       'material-icons', // optional, you are not bound to it
       'material-icons-outlined'
+=======
+      'roboto-font', // optional, you are not bound to it
+      'material-icons' // optional, you are not bound to it
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     ],
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
@@ -80,6 +100,7 @@ module.exports = function (/* ctx */) {
     devServer: {
       https: false,
       port: 8080,
+<<<<<<< HEAD
       open: true, // opens browser window automatically
       proxy: {
         // proxy all requests starting with /api to jsonplaceholder
@@ -91,12 +112,19 @@ module.exports = function (/* ctx */) {
           }
         }
       }
+=======
+      open: true // opens browser window automatically
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
     framework: {
       iconSet: 'material-icons', // Quasar icon set
+<<<<<<< HEAD
       lang: 'zh-hant', // Quasar language pack
+=======
+      lang: 'en-us', // Quasar language pack
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       config: {},
 
       // Possible values for "importStrategy":

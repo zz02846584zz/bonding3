@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="material">
     <MaterialItem class="item" v-for="n in 10" :key="n" />
   </div>
@@ -29,3 +30,9 @@ export default {
   }
 }
 </style>
+=======
+  <div>
+
+  </div>
+</template>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

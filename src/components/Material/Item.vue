@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div>
     <router-link to="/material/test" class="flex default">
       <img src="~/assets/images/avatar.gif">
@@ -19,6 +20,26 @@
         <div class="features">特性：硬度高、光滑、熔點低、可重複使用、可食用、熔點低、可重複使用、可食用、</div>
       </div>
     </router-link>
+=======
+  <div class="flex">
+    <img src="~/assets/images/avatar.gif">
+    <div class="content">
+      <div class="name">PDBE-10 EO</div>
+      <div class="detail flex">
+        <div class="company">宏林化工原料有限公司</div>
+        <div class="score flex align-center margin-left">
+          <q-icon name="grade" />
+          <q-icon name="grade" />
+          <q-icon name="grade" />
+          <q-icon name="grade" />
+          <q-icon name="star_half" />
+          <span>4.7(28)</span>
+        </div>
+      </div>
+      <div class="category">分類：環氧樹脂</div>
+      <div class="features">特性：硬度高、光滑、熔點低、可重複使用、可食用、熔點低、可重複使用、可食用、</div>
+    </div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   </div>
 </template>
 
@@ -51,9 +72,12 @@ img {
         line-height: 10px;
         padding-left: 4px;
       }
+<<<<<<< HEAD
       .count {
         padding: 0 1px;
       }
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     }
   }
   .category {

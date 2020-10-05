@@ -34,14 +34,21 @@ export default {
 
 <style lang="scss" scoped>
 .discus {
+<<<<<<< HEAD
   padding: 60px 12px 10px;
+=======
+  padding: 60px 10px 10px;
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 }
 .filter {
   height: 40px;
   top: 50px;
   background: $white;
   border-bottom: 1px solid $lighter2;
+<<<<<<< HEAD
   z-index: 9;
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 }
 .discus-list {
   .item {
@@ -67,6 +74,7 @@ export default {
   background: $primary;
 }
 </style>
+<<<<<<< HEAD
 
 <style lang="scss" scoped>
 .platform-ios {
@@ -75,3 +83,5 @@ export default {
   }
 }
 </style>
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

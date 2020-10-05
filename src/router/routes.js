@@ -2,6 +2,7 @@
 const routes = [
   {
     path: '/',
+<<<<<<< HEAD
     name: 'Login',
     component: () => import('pages/Login.vue')
   },
@@ -14,35 +15,65 @@ const routes = [
       { path: 'courses', name: 'Courses', component: () => import('pages/Course.vue') },
       { path: 'discus', name: 'Discus', component: () => import('pages/Discus.vue') },
       { path: 'news', name: 'News', component: () => import('pages/News.vue') }
+=======
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Index.vue') },
+      { path: 'material', component: () => import('pages/Material.vue') },
+      { path: 'courses', component: () => import('pages/Course.vue') },
+      { path: 'discus', component: () => import('pages/Discus.vue') },
+      { path: 'news', component: () => import('pages/News.vue') }
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     ]
   },
   {
     path: '/material/:id',
+<<<<<<< HEAD
     component: () => import('layouts/ItemLayout.vue'),
     children: [
       { path: '', name: '材料', component: () => import('pages/Material/Index.vue') }
+=======
+    component: () => import('layouts/PageLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Material/Index.vue') }
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     ]
   },
   {
     path: '/company/:id',
+<<<<<<< HEAD
     name: '公司資訊',
     component: () => import('layouts/CompanyLayout.vue'),
     redirect: '/company/:id/about',
     children: [
       { path: 'about', component: () => import('pages/Company/About.vue') },
       { path: 'material', component: () => import('pages/Company/Materials.vue') },
+=======
+    component: () => import('layouts/PageLayout.vue'),
+    redirect: '/company/:id/about',
+    children: [
+      { path: 'about', component: () => import('pages/Company/Index.vue') },
+      { path: 'materials', component: () => import('pages/Company/Materials.vue') },
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       { path: 'category', component: () => import('pages/Company/Category.vue') }
     ]
   },
   {
     path: '/course/:id',
+<<<<<<< HEAD
     name: '課程',
     component: () => import('layouts/CourseLayout.vue'),
+=======
+    component: () => import('layouts/PageLayout.vue'),
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     redirect: '/course/:id/about',
     children: [
       { path: 'about', component: () => import('pages/Course/About.vue') },
       { path: 'chapter', component: () => import('pages/Course/Chapter.vue') },
+<<<<<<< HEAD
       { path: 'qa', component: () => import('pages/Course/QA.vue') },
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       { path: 'comment', component: () => import('pages/Course/Comment.vue') }
     ]
   },
@@ -62,13 +93,18 @@ const routes = [
   },
   {
     path: '/discus/:id',
+<<<<<<< HEAD
     name: '討論',
     component: () => import('layouts/ItemLayout.vue'),
+=======
+    component: () => import('layouts/PageLayout.vue'),
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     children: [
       { path: '', component: () => import('pages/Discus/Index.vue') }
     ]
   },
   {
+<<<<<<< HEAD
     path: '/new/:id',
     name: '新聞',
     component: () => import('layouts/ItemLayout.vue'),
@@ -77,6 +113,8 @@ const routes = [
     ]
   },
   {
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     path: '/account',
     component: () => import('layouts/PageLayout.vue'),
     children: [
@@ -88,6 +126,7 @@ const routes = [
     ]
   },
   {
+<<<<<<< HEAD
     path: '/search',
     component: () => import('layouts/SearchLayout'),
     children: [
@@ -102,6 +141,8 @@ const routes = [
     ]
   },
   {
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     path: '*',
     component: () => import('pages/404.vue')
   }

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="main">
     <div class="title">机器学习 A-Z (Machine Learning A-Z in Chinese)</div>
     <div class="summer flex align-center">
@@ -130,3 +131,9 @@ export default {
   }
 }
 </style>
+=======
+  <div>
+
+  </div>
+</template>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

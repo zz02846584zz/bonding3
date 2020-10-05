@@ -1,6 +1,7 @@
 <template>
   <div id="q-app">
     <router-view />
+<<<<<<< HEAD
 
     <transition name="fade">
       <DailyKnowledgeDialog v-if="knowlodgeDialog" @close="knowlodgeDialog = false" :title="'每日小知識'" :message="'此區域尚未開放，敬請期待！'"></DailyKnowledgeDialog>
@@ -9,10 +10,13 @@
     <transition name="fade">
       <div v-if="knowlodgeDialog" @click="knowlodgeDialog = false" class="knowlodge-overlay absolute-full"></div>
     </transition>
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import DailyKnowledgeDialog from 'components/Dialog/DailyKnowledge'
 
 export default {
@@ -92,3 +96,9 @@ export default {
   }
 }
 </style>
+=======
+export default {
+  name: 'App'
+}
+</script>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

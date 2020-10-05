@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div>
     <div class="header fixed-top flex align-center">
       <div @click="previous()" class="previous absolute">
@@ -68,3 +69,7 @@ export default {
   }
 }
 </style>
+=======
+  <router-view />
+</template>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

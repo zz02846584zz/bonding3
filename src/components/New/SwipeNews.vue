@@ -18,10 +18,15 @@ export default {
       type: Object,
       default () {
         return {
+<<<<<<< HEAD
           spaceBetween: 20,
           pagination: {
             el: '.swiper-pagination',
             clickable: true
+=======
+          pagination: {
+            el: '.swiper-pagination'
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
           }
         }
       }

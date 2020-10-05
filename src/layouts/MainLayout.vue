@@ -1,16 +1,26 @@
 <template>
+<<<<<<< HEAD
   <div class="layout">
     <header class="header fixed-top flex align-center">
       <div @click="leftbarShow()" class="avatar image-cover">
         <img src="~/assets/images/avatar.gif">
       </div>
       <div @click="searchShow()" class="search flex align-center clickable">
+=======
+  <div>
+    <div class="header fixed-top flex align-center">
+      <div class="logo image-cover">
+        <img src="~/assets/images/avatar.gif">
+      </div>
+      <div class="search flex align-center clickable">
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
         <div class="icon">
           <div class="circle"></div>
           <div class="path"></div>
         </div>
         <span>搜尋......</span>
       </div>
+<<<<<<< HEAD
       <router-link to="/notice" class="notice default flex align-center justify-center">
         <div class="icon">
           <q-icon size="1.6em" name="ion-notifications-outline" />
@@ -18,10 +28,20 @@
         <span class="flex align-center justify-center">12</span>
       </router-link>
     </header>
+=======
+      <div class="notice flex align-center justify-center">
+        <div class="icon">
+          <img src="~/assets/images/home-black-24dp.svg">
+        </div>
+        <span class="flex align-center justify-center">12</span>
+      </div>
+    </div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     <div class="content">
       <router-view />
     </div>
     <div class="footer flex align-center justify-between wide fixed-bottom">
+<<<<<<< HEAD
       <router-link to="/home" class="item">
         <div class="icon center">
           <!-- <img src="~/assets/images/home-black-24dp.svg"> -->
@@ -94,10 +114,44 @@
     <transition name="fast-fade">
       <SearchBar v-if="searchVisible" @close="searchClose()" class="search-bar fixed-full" />
     </transition>
+=======
+      <router-link to="/" class="item">
+        <div class="icon center">
+          <img src="~/assets/images/home-black-24dp.svg">
+          <span>首頁</span>
+        </div>
+      </router-link>
+      <router-link to="/material" class="item">
+        <div class="icon">
+          <img src="~/assets/images/home-black-24dp.svg">
+          <span>材料</span>
+        </div>
+      </router-link>
+      <router-link to="/courses" class="item">
+        <div class="icon">
+          <img src="~/assets/images/home-black-24dp.svg">
+          <span>課程</span>
+        </div>
+      </router-link>
+      <router-link to="/discus" class="item">
+        <div class="icon">
+          <img src="~/assets/images/home-black-24dp.svg">
+          <span>討論</span>
+        </div>
+      </router-link>
+      <router-link to="/news" class="item">
+        <div class="icon">
+          <img src="~/assets/images/home-black-24dp.svg">
+          <span>新聞</span>
+        </div>
+      </router-link>
+    </div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import LeftBar from './MainLayout/LeftBar'
 import SearchBar from './MainLayout/SearchBar'
 import MessageDialog from 'components/Dialog/Message'
@@ -137,6 +191,10 @@ export default {
       this.messageDialog = true
     }
   }
+=======
+export default {
+
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 }
 </script>
 
@@ -146,8 +204,13 @@ export default {
   padding: 0 12px;
   border-bottom: 1px solid $lighter;
   background: $white;
+<<<<<<< HEAD
   z-index: 9;
   .avatar {
+=======
+  z-index: 99;
+  .logo {
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -158,7 +221,11 @@ export default {
     flex: 1;
     background: $lighter;
     border-radius: 20px;
+<<<<<<< HEAD
     height: 28px;
+=======
+    height: 23px;
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     padding-left: 30px;
     margin: 0 15px;
     font-size: 12px;
@@ -211,6 +278,7 @@ export default {
   }
 }
 .content {
+<<<<<<< HEAD
   padding: 50px 0 55px;
 }
 .footer {
@@ -288,6 +356,36 @@ export default {
   /* for your app's footer */
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
+=======
+  padding: 50px 0;
+}
+.footer {
+  height: 50px;
+  padding: 0 24px;
+  background: $white;
+  font-size: 12px;
+  border-top: 1px solid $lighter;
+  z-index: 99;
+  span {
+    color: $font-default;
+  }
+}
+
+/deep/ .section > .title {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 10px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 500;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 18px;
+    background: $primary;
+    margin-right: 6px;
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   }
 }
 </style>

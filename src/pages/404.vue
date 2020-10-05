@@ -14,7 +14,11 @@
         color="white"
         text-color="blue"
         unelevated
+<<<<<<< HEAD
         to="/home"
+=======
+        to="/"
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
         label="Go Home"
         no-caps
       />

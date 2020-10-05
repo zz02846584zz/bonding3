@@ -1,5 +1,6 @@
 <template>
   <div>
+<<<<<<< HEAD
     <router-link to="/discus/test" class="default">
       <div class="author flex align-center">
         <div class="avatar">
@@ -22,6 +23,28 @@
         </div>
       </div>
     </router-link>
+=======
+    <div class="author flex align-center">
+      <div class="avatar">
+        <img src="~/assets/images/avatar.gif">
+      </div>
+      <div class="id">I1291274819273</div>
+    </div>
+    <div class="detail flex">
+      <div class="content">
+        <div class="title">百度等墻內IT產品是否為精英階層製造信息不對等的工具？</div>
+        <div class="desc flex">
+          <div class="thumb flex align-center">
+            <q-icon name="grade" /><span>293</span>
+          </div>
+          <div class="comment flex align-center">回應<span>47</span></div>
+        </div>
+      </div>
+      <div class="cover image-cover">
+        <img src="~/assets/images/logo.png">
+      </div>
+    </div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   </div>
 </template>
 
@@ -50,8 +73,11 @@
     }
   }
   .cover {
+<<<<<<< HEAD
     border-radius: 2px;
     overflow: hidden;
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     width: 80px;
     img {
       height: auto;
@@ -61,11 +87,18 @@
 .desc {
   padding-top: 5px;
   font-size: 13px;
+<<<<<<< HEAD
   * {
     color: $light;
   }
   .thumb {
     padding-right: 12px;
+=======
+  color: $light;
+  .thumb {
+    padding-right: 12px;
+    z-index: -1;
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     i {
       color: $primary;
     }

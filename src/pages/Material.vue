@@ -55,6 +55,7 @@ export default {
   border-bottom: 1px solid $lighter;
 }
 </style>
+<<<<<<< HEAD
 
 <style lang="scss" scoped>
 .platform-ios {
@@ -63,3 +64,5 @@ export default {
   }
 }
 </style>
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493

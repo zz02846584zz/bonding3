@@ -2,6 +2,7 @@
   <div class="course">
     <div class="hot-list section">
       <div class="title">熱門推薦</div>
+<<<<<<< HEAD
       <div class="scroll-h">
         <div class="scroll-x">
           <CourseSwipeItem class="course-item" v-for="n in 3" :key="n" />
@@ -9,10 +10,16 @@
             <p>查看全部</p>
           </router-link>
         </div>
+=======
+      <div class="box">
+        <div></div>
+        <div></div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       </div>
     </div>
     <div class="category section">
       <div class="title">探索<div class="flex align-center margin-left">更多<span></span></div></div>
+<<<<<<< HEAD
       <div class="category-list scroll-h">
         <div class="scroll-x">
           <div>
@@ -24,10 +31,17 @@
             </ul>
           </div>
         </div>
+=======
+      <div class="category-list">
+        <ul>
+          <li v-for="n in 10" :key="n">分類{{n}}</li>
+        </ul>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       </div>
     </div>
     <div class="category section">
       <div class="title">免費課程</div>
+<<<<<<< HEAD
       <div class="scroll-h">
         <div class="scroll-x">
           <CourseSwipeItem class="course-item" v-for="n in 3" :key="n" />
@@ -35,10 +49,17 @@
             <p>查看全部</p>
           </router-link>
         </div>
+=======
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       </div>
     </div>
     <div class="category section">
       <div class="title">評分最高</div>
+<<<<<<< HEAD
       <div class="scroll-h">
         <div class="scroll-x">
           <CourseSwipeItem class="course-item" v-for="n in 3" :key="n" />
@@ -46,10 +67,17 @@
             <p>查看全部</p>
           </router-link>
         </div>
+=======
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       </div>
     </div>
     <div class="category section">
       <div class="title">熱門課程</div>
+<<<<<<< HEAD
       <div class="scroll-h">
         <div class="scroll-x">
           <CourseSwipeItem class="course-item" v-for="n in 3" :key="n" />
@@ -57,18 +85,29 @@
             <p>查看全部</p>
           </router-link>
         </div>
+=======
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
       </div>
     </div>
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import CourseSwipeItem from 'components/Course/SwipeItem'
 
 export default {
   components: {
     CourseSwipeItem
   }
+=======
+export default {
+
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 }
 </script>
 
@@ -79,13 +118,17 @@ export default {
 .section .title {
   padding: 0 12px;
 }
+<<<<<<< HEAD
 .scroll-x {
   display: -webkit-box;
 }
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 .hot-list {
   .title {
     margin-top: 0;
   }
+<<<<<<< HEAD
   .course-item {
     width: 75%;
     margin-right: 12px;
@@ -95,6 +138,23 @@ export default {
     width: 40%;
     height: 100%;
     background: #eaeaea;
+=======
+  .box {
+    position: relative;
+    height: 200px;
+    > div {
+      display: inline-block;
+      position: absolute;
+      width: 80vw;
+      height: 100%;
+      background: $light;
+      margin-left: 12px;
+      &:last-child {
+        transform: translateX(100%);
+        left: 20px
+      }
+    }
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
   }
 }
 .category {
@@ -114,6 +174,7 @@ export default {
       }
     }
   }
+<<<<<<< HEAD
   .course-item {
     width: 42%;
     margin-left: 12px;
@@ -126,11 +187,14 @@ export default {
     height: 100%;
     background: #eaeaea;
   }
+=======
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
 }
 .category-list {
   ul {
     display: flex;
     list-style: none;
+<<<<<<< HEAD
     padding: 0 0 12px 12px;
     li {
       padding: 5px 20px;
@@ -144,6 +208,14 @@ export default {
       &:last-child {
         padding-right: 10px;
       }
+=======
+    padding: 0 0 12px;
+    overflow-x: scroll;
+    li {
+      width: fit-content;
+      word-break: keep-all;
+      margin-left: 12px;
+>>>>>>> 99b48ee8b94c2800e2e471702a062a49b4d62493
     }
   }
 }
